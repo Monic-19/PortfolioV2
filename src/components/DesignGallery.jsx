@@ -75,8 +75,8 @@ const DesignGallery = () => {
 
                 <div className='lg:mb-0 mb-[15vh]' >
                     <div className='parallax-bg lg:h-[90vh] h-[60vh] w-full bg-blue-300'></div>
-                    <h1 className='pl-6 my-3 text-4xl lg:text-center font-extrabold'>Vinta Premium Bag Website</h1>
-                    <h1 className='pl-6 text-xl text-zinc-500 lg:text-center'>A fully responsive webpage designed for a high quality bag selling company</h1>
+                    <h1 className='pl-6 my-3 lg:text-4xl text-2xl lg:text-center font-extrabold'>Vinta Premium Bag Website</h1>
+                    <h1 className='pl-6 lg:text-xl text-base text-zinc-500 lg:text-center'>A fully responsive webpage designed for a high quality bag selling company</h1>
                     <h1 className='text-blue-600 hover:text-blue-800 mt-2 lg:text-center pl-6 lg:text-md md:text-md text-sm'>
                         <a href={"https://vinta.vercel.app/"} target='_blank'>View Live Project</a>
                     </h1>

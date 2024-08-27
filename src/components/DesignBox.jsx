@@ -25,12 +25,12 @@ const DesignBox = ({text1 = "text1", text2 = "text2", weblink, caseStudy, figmal
                 whileInView={{opacity : 1, fontWeight : 900, paddingTop : 0}} 
                 transition={{ease : "easeInOut"}}
                 viewport={{margin : "-50px"}}
-                className={`lg:pl-0 pl-6 lg:mb-3 mb-2 text-4xl `}>
+                className={`lg:pl-0 pl-6 lg:mb-3 mb-2 lg:text-4xl text-2xl `}>
                     {text1}
             </motion.h1>
 
             <motion.h1 
-                ref={t1} className='lg:pl-0 pl-6 text-xl text-zinc-500 italic'>
+                ref={t1} className='lg:pl-0 pl-6 lg:text-xl text-zinc-500 italic'>
                 {text2}
             </motion.h1>
             <div className='flex lg:pl-0 pl-6 lg:text-md text-sm'>
