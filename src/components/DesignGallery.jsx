@@ -6,6 +6,10 @@ import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 
+import img1 from "../assets/1.png"
+import img2 from "../assets/2.png"
+import img3 from "../assets/3.png"
+
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 
@@ -55,12 +59,12 @@ const DesignGallery = () => {
                     <DesignBox
                         text1={"Quotient Bot"}
                         text2={"Website for esports bot for tournament and scrims."}
-                        thumbnail={"src/assets/1.png"} />
+                        thumbnail={img1} />
 
                     <DesignBox
                         text1={"TMR ESPORTS"}
                         text2={"Fullstack Next.js website for tounament registration organization."}
-                        thumbnail={"src/assets/2.png"}
+                        thumbnail={img2}
                         weblink={"https://www.tmresports.in/"} />
                 </div>
 
@@ -103,7 +107,7 @@ const DesignGallery = () => {
                     <DesignBox
                         text1={"MIRANDA WEBSITE"}
                         text2={"A NewsPaper themed porfolio design."}
-                        thumbnail={"src/assets/3.png"}
+                        thumbnail={img3}
                         weblink={"https://also-monic.github.io/Miranda-website/"} />
 
                 </div>
