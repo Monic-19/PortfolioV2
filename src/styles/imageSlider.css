@@ -1,0 +1,139 @@
+.banner{
+    width: 100%;
+    height: 60vh;
+    background-color:#1B2A41;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner .slider{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top : 10%;
+    left : calc(50% - 100px);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    transition: all 1s linear;
+    animation: autoRun 20s linear infinite;
+}
+
+@keyframes autoRun {
+    0% {
+        transform: perspective(1000px) rotateX(20deg) rotateY(0deg);
+    }
+    10% {
+        transform: perspective(1000px) rotateX(-5deg) rotateY(100deg);
+    }
+    30% {
+        transform: perspective(1000px) rotateX(-5deg) rotateY(240deg);
+    }
+    50% {
+        transform: perspective(1000px) rotateX(-5deg) rotateY(360deg);
+    }
+    70% {
+        transform: perspective(1000px) rotateX(-5deg) rotateY(240deg);
+    }
+    90%{
+        transform: perspective(1000px) rotateX(-5deg) rotateY(100deg);
+    }
+    100% {
+        transform: perspective(1000px) rotateX(20deg) rotateY(0deg);
+    }
+}
+
+
+.banner .slider .item{
+    position: absolute;
+    inset: 0 0 0 0;
+}
+
+.item:nth-child(1){
+    transform: rotateY(0deg)   translateZ(450px);
+}
+.item:nth-child(2){
+    transform: rotateY(60deg)   translateZ(450px);  
+}
+.item:nth-child(3){
+    transform: rotateY(120deg)   translateZ(450px);  
+}
+.item:nth-child(4){
+    transform: rotateY(180deg)   translateZ(450px);  
+}
+.item:nth-child(5){
+    transform: rotateY(240deg)   translateZ(450px);  
+}
+.item:nth-child(6){
+    transform: rotateY(300deg)   translateZ(450px);  
+}
+.item:nth-child(7){
+    transform: rotateY(360deg)   translateZ(450px);  
+}
+
+.banner .slider .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: all 0.1s ease-in;
+    cursor: pointer;
+}
+
+.banner .slider .item img:hover{
+    scale : 1.064;
+}
+
+.banner .text{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: end;
+    font-size: 7vw;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 800;
+    height: 13vh;
+}
+
+@media screen and (max-width: 500px){
+
+    .banner .text{
+        font-size: 16vw;
+        height: 8vh;
+    }
+    .banner .slider{
+        height: 150px;
+        width: 150px;
+        left : calc(50% - 75px);
+        transform: perspective(800px);
+    }
+    .item{
+        transform: translateZ(200px);
+    }
+    @keyframes autoRun {
+        0% {
+            transform: perspective(900px) rotateX(10deg) rotateY(0deg);
+        }
+        10% {
+            transform: perspective(900px) rotateX(-5deg) rotateY(100deg);
+        }
+        30% {
+            transform: perspective(900px) rotateX(-5deg) rotateY(240deg);
+        }
+        50% {
+            transform: perspective(900px) rotateX(-5deg) rotateY(360deg);
+        }
+        70% {
+            transform: perspective(900px) rotateX(-5deg) rotateY(240deg);
+        }
+        90%{
+            transform: perspective(900px) rotateX(-5deg) rotateY(100deg);
+        }
+        100% {
+            transform: perspective(900px) rotateX(10deg) rotateY(0deg);
+        }
+    }
+}
+
