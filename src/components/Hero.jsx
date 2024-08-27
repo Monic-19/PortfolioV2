@@ -2,6 +2,8 @@ import React from 'react'
 import { motion } from "framer-motion"
 import { FaGithubAlt,FaLinkedin  } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import profile from "../assets/profile.jpeg"
+import profile2 from "../assets/profile2.avif"
 
 const Hero = () => {
     return (
@@ -22,11 +24,11 @@ const Hero = () => {
                 </div>
 
                 <div className='lg:h-[50vh] md:h-[40vh] h-[25vh] lg:w-[30vw] w-[60vw] lg:right-0 lg:bottom-0 absolute right-[50%] lg:translate-x-0  translate-x-1/2 md:bottom-[20vh] bottom-[35vh] rounded-md overflow-hidden shadow-xl '>
-                    <img src="public/assets/profile.jpeg" alt="profile" className='h-full w-full object-cover object-bottom hover:scale-125 duration-500' />
+                    <img src={profile} alt="profile" className='h-full w-full object-cover object-bottom hover:scale-125 duration-500' />
                 </div>
 
                 <div className='lg:h-[50vh] md:h-[40vh] h-[25vh] lg:w-[30vw] w-[60vw] bg-purple-500 lg:right-[32vw] lg:flex hidden lg:bottom-0 absolute right-[50%] lg:translate-x-0  translate-x-1/2 md:bottom-[20vh] bottom-[25vh] rounded-md overflow-hidden shadow-xl '>
-                    <img src="public/assets/profile2.avif" alt="profile" className='h-full w-full object-cover object-bottom hover:scale-125 duration-500' />
+                    <img src={profile2} alt="profile" className='h-full w-full object-cover object-bottom hover:scale-125 duration-500' />
                 </div>
             </div>
         </div>
