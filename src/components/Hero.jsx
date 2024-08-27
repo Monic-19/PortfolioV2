@@ -26,7 +26,7 @@ const Hero = () => {
                 </div>
 
                 <div className='lg:h-[50vh] md:h-[40vh] h-[25vh] lg:w-[30vw] w-[60vw] bg-purple-500 lg:right-[32vw] lg:flex hidden lg:bottom-0 absolute right-[50%] lg:translate-x-0  translate-x-1/2 md:bottom-[20vh] bottom-[25vh] rounded-md overflow-hidden shadow-xl '>
-                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTkwfHx3ZWJzaXRlJTIwZGVzaWduZXJ8ZW58MHx8MHx8fDA%3D" alt="profile" className='h-full w-full object-cover object-bottom hover:scale-125 duration-500' />
+                    <img src="src/assets/profile2.avif" alt="profile" className='h-full w-full object-cover object-bottom hover:scale-125 duration-500' />
                 </div>
             </div>
         </div>
