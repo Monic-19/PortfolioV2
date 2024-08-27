@@ -4,7 +4,7 @@ import {motion} from "framer-motion"
 const Title = ({text1 = "", text2 = "", invertd = false}) => {
     const texta = useRef();
   return (
-    <div className={`${invertd? "bg-white text-[#1B2A41]" : "bg-[#1B2A41] text-white"} lg:h-[45vh] h-[12vh] w-full relative font-extrabold overflow-hidden`}>
+    <div className={`${invertd? "bg-white text-[#1B2A41]" : "bg-[#1B2A41] text-white"} lg:h-[45vh] h-[13vh] w-full relative font-extrabold overflow-hidden`}>
         <motion.h1 
             ref={texta} 
             initial ={{rotate : "15deg"}}

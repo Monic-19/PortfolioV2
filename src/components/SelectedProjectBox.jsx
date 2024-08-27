@@ -8,16 +8,16 @@ const SelectedProjectBox = ({ reverse = false, text1, text2, text3, thumbnail, g
     const textAlignClass = reverse ? 'text-right pr-3 ' : 'text-left pl-3';
 
     return (
-        <div className={`lg:h-[70vh] w-full lg:flex p-6 lg:gap-4 h-[40vh] mt-[3vh] ${reverse ? 'lg:flex-row-reverse' : ''}`}>
+        <div className={`lg:h-[70vh] w-full lg:flex p-6 lg:gap-4 h-[55vh] mt-[3vh] ${reverse ? 'lg:flex-row-reverse' : ''}`}>
 
             <div className='spbp bg-[#ECECEC] lg:w-[60%] lg:h-full h-[25vh] w-full lg:rounded-[2vh] rounded-[2vh] flex justify-center items-center overflow-hidden'>
 
-                <div className='spbc bg-blue-400 lg:w-[50vw] lg:h-[30vw] h-[15vh] w-[60vw] scale-[1.05] rounded-lg lg:rounded-2xl overflow-hidden'>
+                <div className='spbc bg-blue-400 lg:w-[50vw] lg:h-[30vw] h-[18vh] w-[70vw] scale-[1.05] rounded-lg lg:rounded-2xl overflow-hidden'>
                     <img src={thumbnail} alt="" className=' object-center object-cover h-full w-full' />
                 </div>
             </div>
 
-            <div className={`lg:w-[35%] lg:h-full h-[10vh] w-full flex flex-col justify-end cursor-default  ${textAlignClass}`}>
+            <div className={`lg:w-[35%] lg:h-full h-[22vh] w-full flex flex-col justify-end cursor-default  ${textAlignClass} `}>
                 <motion.h1
                     initial={{ opacity: 0, x: initialX, originX }}
                     whileInView={{ opacity: 1, x: 0 }}
@@ -27,7 +27,6 @@ const SelectedProjectBox = ({ reverse = false, text1, text2, text3, thumbnail, g
                 >
                     {text1}
                 </motion.h1>
-
                 <motion.h1
                     initial={{ opacity: 0, x: initialX, originX }}
                     whileInView={{ opacity: 1, x: 0 }}
@@ -37,9 +36,6 @@ const SelectedProjectBox = ({ reverse = false, text1, text2, text3, thumbnail, g
                 >
                     {text2}
                 </motion.h1>
-
-                <div className='flex'></div>
-
                 {
                     livelink &&
                     <motion.h1
@@ -64,13 +60,10 @@ const SelectedProjectBox = ({ reverse = false, text1, text2, text3, thumbnail, g
                         className='text-blue-600 hover:text-blue-800 my-2'
                     >
                         <a href={githublink} target='_blank'>
-                            View Gihub Repo
+                            View Github Repo
                         </a>
                     </motion.h1>
                 }
-
-
-
                 <motion.h1
                     initial={{ opacity: 0, x: initialX, originX }}
                     whileInView={{ opacity: 1, x: 0 }}
@@ -80,8 +73,6 @@ const SelectedProjectBox = ({ reverse = false, text1, text2, text3, thumbnail, g
                 >
                     {text3}
                 </motion.h1>
-
-
             </div>
         </div>
     );

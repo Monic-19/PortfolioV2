@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div className='relative'>
-      <div className='fixed z-10 lg:top-4 top-1 lg:right-[2vw] md:right-[2vw] right-10 lg:w-[25vw] w-[80vw] flex justify-evenly bg-white bg-opacity-30 backdrop-blur-xl rounded-xl'>
+      <div className='fixed z-10 lg:top-4 top-3 lg:right-[2vw] md:right-[2vw] right-10 lg:w-[25vw] w-[80vw] flex justify-evenly bg-white bg-opacity-30 backdrop-blur-xl rounded-xl'>
         <a href="#hero">Hero</a>
         <a href="#design">Designs</a>
         <a href="#developed">Developed Projects</a>
