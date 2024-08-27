@@ -9,6 +9,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger"
 import img1 from "../assets/1.png"
 import img2 from "../assets/2.png"
 import img3 from "../assets/3.png"
+import img4 from "../assets/chair.gif"
+import img5 from "../assets/can.gif"
+import img6 from "../assets/tmr_slider.png"
+import img7 from "../assets/webdesigns.gif"
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
@@ -90,7 +94,7 @@ const DesignGallery = () => {
                     <DesignBox
                         text1={"Chair Overview Design"}
                         text2={"An overview design section for a chair as a product."}
-                        thumbnail={"src/assets/chair.gif"}
+                        thumbnail={img4}
                         weblink={"https://also-monic.github.io/Chair_Design/"} />
 
                 </div>
@@ -101,7 +105,7 @@ const DesignGallery = () => {
                         text2 = "Animated figma design for a soda can company."
                         weblink={"https://www.figma.com/proto/jA2RjdOJOdTteaI365SEiH/Carousel?node-id=23-10"}
                         figmalink={"https://www.figma.com/design/jA2RjdOJOdTteaI365SEiH/Carousel?node-id=0-1&m=dev"}
-                        thumbnail={"src/assets/can.gif"}
+                        thumbnail={img5}
                     />
 
                     <DesignBox
@@ -118,7 +122,7 @@ const DesignGallery = () => {
                 <DesignBox
                         text1={"COMPUTER HUT"}
                         text2={"Redesigned for modern website for a computer assembly startup."}
-                        thumbnail={"src/assets/tmr_slider.png"}
+                        thumbnail={img6}
                         caseStudy={"https://www.tmresports.in/"}
                         weblink={"https://www.tmresports.in/"}
                         figmalink={"https://www.tmresports.in/"} />
