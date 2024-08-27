@@ -13,6 +13,7 @@ import img4 from "../assets/chair.gif"
 import img5 from "../assets/can.gif"
 import img6 from "../assets/tmr_slider.png"
 import img7 from "../assets/webdesigns.gif"
+import img8 from "../assets/asterluxe.png"
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
@@ -86,10 +87,10 @@ const DesignGallery = () => {
                     <DesignBox
                         text1={"ASTRALUXE"}
                         text2={"Figma Designed for modern website for a clothing brand."}
-                        thumbnail={"src/assets/figma1.jpeg"}
-                        caseStudy={"https://www.tmresports.in/"}
-                        weblink={"https://www.tmresports.in/"}
-                        figmalink={"https://www.tmresports.in/"} />
+                        thumbnail={img8}
+                        // caseStudy={"https://www.tmresports.in/"}
+                        weblink={"https://www.figma.com/proto/bNAwmopw9Rw7vIMCqigea6/Astraluxe?node-id=2-2"}
+                        figmalink={"https://www.figma.com/design/bNAwmopw9Rw7vIMCqigea6/Astraluxe?node-id=0-1&m=dev&t=2ybZGe817heiVLVT-1"} />
 
                     <DesignBox
                         text1={"Chair Overview Design"}
@@ -130,7 +131,7 @@ const DesignGallery = () => {
                     <DesignBox
                         text1={"Designs"}
                         text2={"Sample of some of random designs of landing web pages"}
-                        thumbnail={"src/assets/webdesigns.gif"}
+                        thumbnail={img7}
                         githublink={"https://github.com/Monic-19/CSS-Projects"}
                     />
                 </div>
