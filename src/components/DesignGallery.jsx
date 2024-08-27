@@ -124,9 +124,10 @@ const DesignGallery = () => {
                         text1={"COMPUTER HUT"}
                         text2={"Redesigned for modern website for a computer assembly startup."}
                         thumbnail={img6}
-                        caseStudy={"https://www.tmresports.in/"}
-                        weblink={"https://www.tmresports.in/"}
-                        figmalink={"https://www.tmresports.in/"} />
+                        // caseStudy={"https://www.tmresports.in/"}
+                        // weblink={"https://www.tmresports.in/"}
+                        // figmalink={"https://www.tmresports.in/"} 
+                        />
 
                     <DesignBox
                         text1={"Designs"}

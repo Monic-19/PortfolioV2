@@ -17,7 +17,7 @@ const SelectedProjectBox = ({ reverse = false, text1, text2, text3, thumbnail, g
                 </div>
             </div>
 
-            <div className={`lg:w-[35%] lg:h-full h-[22vh] w-full flex flex-col justify-end cursor-default  ${textAlignClass} `}>
+            <div className={`lg:w-[35%] lg:h-full h-[24vh] w-full flex flex-col justify-end cursor-default  ${textAlignClass} `}>
                 <motion.h1
                     initial={{ opacity: 0, x: initialX, originX }}
                     whileInView={{ opacity: 1, x: 0 }}
